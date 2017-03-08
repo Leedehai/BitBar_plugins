@@ -18,4 +18,4 @@ mem_used_percent = mem_report[2]
 
 print "C %s M %s" % (str(cpu_used_percent/100).lstrip('0')[0:3], str(mem_used_percent/100).lstrip('0')[0:3])
 print "---"
-print "Used Mem: %.2f GB/16.00 GB" % (16-avail_mem)
+print "Used Mem: %.2f GB/%.2f GB" % (total_mem-avail_mem, total_mem)
